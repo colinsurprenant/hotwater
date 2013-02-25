@@ -1,4 +1,4 @@
-# Hotwater v0.1.1
+# Hotwater v0.1.2
 
 [![build status](https://secure.travis-ci.org/colinsurprenant/hotwater.png)](http://travis-ci.org/colinsurprenant/hotwater)
 
@@ -11,6 +11,10 @@ Ruby & JRuby gem with fast **string edit distance** algorithms C implementations
 - [N-Gram](https://en.wikipedia.org/wiki/N-gram) distance
 
 ## Installation
+
+Tested on **OSX 10.8.2** and **Linux 12.10** with
+- MRI Ruby 1.9.3 p385
+- JRuby 1.7.2 (1.9.3 p327)
 
 Add this line to your application's Gemfile:
 ```ruby
