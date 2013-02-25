@@ -66,7 +66,8 @@ double ngram_distance (const char *source, const char *target, int n) {
   int cost = 0;
   if (sl < n || tl < n) {
     int ni = MIN(sl, tl);
-    for (int i = 0; i < ni; i++) {
+    int i;
+    for (i = 0; i < ni; i++) {
       if (source[i] == target[i]) {
         cost++;
       }
@@ -85,7 +86,8 @@ double ngram_distance (const char *source, const char *target, int n) {
   double* _d; // placeholder to assist in swapping p and d
   
   // construct sa with prefix
-  for (int i = 0; i < sa_len; i++) {
+  int i;
+  for (i = 0; i < sa_len; i++) {
     if (i < n - 1) {
       sa[i] = 0 ; //add prefix
     }
@@ -108,7 +110,7 @@ double ngram_distance (const char *source, const char *target, int n) {
   }
   
   // indexes into strings s and t
-  int i = 0; // iterates through source
+  i = 0; // iterates through source
   int j = 0; // iterates through target
   
   char* t_j = calloc(n + 1, sizeof(char)); // jth n-gram of t
@@ -125,10 +127,11 @@ double ngram_distance (const char *source, const char *target, int n) {
   for (j = 1; j <= tl; j++) {
     // construct t_j n-gram 
     if (j < n) {
-      for (int ti = 0; ti < n - j; ti++) {
+      int ti;
+      for (ti = 0; ti < n - j; ti++) {
         t_j[ti] = 0; //add prefix
       }
-      for (int ti = n - j; ti < n; ti++) {
+      for (ti = n - j; ti < n; ti++) {
          t_j[ti] = target[ti - (n - j)];
       }
     }
@@ -142,7 +145,8 @@ double ngram_distance (const char *source, const char *target, int n) {
       int tn = n;
       // compare sa to t_j
 
-      for (int ni = 0; ni < n; ni++) {
+      int ni;
+      for (ni = 0; ni < n; ni++) {
         if (sa[i - 1 + ni] != t_j[ni]) {
           cost++;
         }

@@ -10,6 +10,7 @@ Colin Surprenant, Feb 2013
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <alloca.h>
 #include "hotwater.h"
 
 #define NOTNUM(c)   ((c>57) || (c<48))
@@ -52,7 +53,7 @@ double _jaro_winkler(const char *ying, const char *yang, bool long_tolerance, bo
     search_range = min_len = (ying_length > yang_length) ? ying_length : yang_length;
 
     // Blank out the flags
-    ying_flag = alloca(ying_length + 1);
+    ying_flag = (char *)alloca(ying_length + 1);
     if (!ying_flag) return -1.0;
 
     yang_flag = alloca(yang_length + 1);
