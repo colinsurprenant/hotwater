@@ -5,7 +5,7 @@ require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 require 'ffi-compiler/compile_task'
 
-task :default => :spec
+task :default => [:clean, :compile, :spec]
 
 desc "run specs"
 task :spec do
