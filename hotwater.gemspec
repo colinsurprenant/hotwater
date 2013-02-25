@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = Hotwater::VERSION
   gem.authors       = ["Colin Surprenant"]
   gem.email         = ["colin.surprenant@gmail.com"]
-  gem.description   = "Ruby & JRuby gem with fast string edit distance C implementation using FFI bindings"
+  gem.description   = "Ruby & JRuby gem with fast string edit distance algorithms C implementations with FFI bindings"
   gem.summary       = "Fast string edit distance"
   gem.homepage      = "http://github.com/colinsurprenant/hotwater"
 

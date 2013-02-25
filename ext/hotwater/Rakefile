@@ -1,5 +1,5 @@
 require 'ffi-compiler/compile_task'
 
 FFI::Compiler::CompileTask.new('hotwater') do |c|
-  # nothing yet bro
+  # nothing to see here, move along
 end

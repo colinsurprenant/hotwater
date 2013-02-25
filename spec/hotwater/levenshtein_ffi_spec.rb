@@ -25,5 +25,9 @@ describe Hotwater do
     Hotwater.normalized_levenshtein_distance("Saturday", "Sunday").round(4).should == 0.625
     Hotwater.normalized_levenshtein_distance("teusday", "tuesday").round(4).should == 0.7143
     Hotwater.normalized_levenshtein_distance("teusday", "thursday").round(4).should == 0.75
+
+    Hotwater.normalized_levenshtein_distance("aaaa", "aaab").round(4).should == 0.75
+    Hotwater.normalized_levenshtein_distance("aaaaa", "aaaab").round(4).should == 0.8
+    Hotwater.normalized_levenshtein_distance("aaaaaa", "aaaaab").round(4).should == 0.8333
   end
 end

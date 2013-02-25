@@ -1,7 +1,7 @@
 /* 
 Colin Surprenant, Feb 2013
 - converted in C from org/apache/lucene/search/spell/NGramDistance.java v4.0.0
-- fixed segfault bug in substring n parameter, which did not surface in Java
+- fixed segfault bug in call to substring for n parameter, which did not surface in Java
 */
 
 /* package org.apache.lucene.search.spell; */
