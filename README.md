@@ -1,5 +1,7 @@
 # Hotwater v0.1.1
 
+[![build status](https://secure.travis-ci.org/colinsurprenant/hotwater.png)](http://travis-ci.org/colinsurprenant/hotwater)
+
 Ruby & JRuby gem with fast **string edit distance** algorithms C implementations with FFI bindings.
 
 ### Algorithms
