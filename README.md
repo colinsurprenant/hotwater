@@ -73,7 +73,7 @@ Hotwater.ngram_distance("natural", "contrary", 3).round(4) # => 0.2083
 
 ## Why?
 
-Why Hotwater? as stated in the credits section, some of the C code comes from the [jellyfish Python project](https://github.com/sunlightlabs/jellyfish). Jelly fish made me think right away about New Brunswick beaches where I have been a couple of times in the past years. There is this legend about New Brunswick having warm water beaches. I even saw a tourism promotion TV commercial selling NB has having warm water. This is a lie! :P I never experienced warm water (in the generaly accepted definition) in NB, only lots of jellyfish :D (that being said, I have enjoyed every bit of my visits in New Brunswick and I really do not care about warm water really ;)
+Why Hotwater? as stated in the credits section, some of the C code comes from the [jellyfish Python project](https://github.com/sunlightlabs/jellyfish). Jelly fish made me think right away about New Brunswick beaches where I have been a couple of times in the past years. There is this legend about New Brunswick having warm water beaches. I even saw a tourism promotion TV commercial selling NB as having warm water. This is a lie! :P I never experienced warm water (in the generaly accepted definition) in NB, only lots of jellyfish :D (that being said, I have enjoyed every bit of my visits in New Brunswick and I really do not care about warm water really ;)
 
 ## Author
 
